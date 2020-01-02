@@ -1,0 +1,55 @@
+.GithubListItem {
+    width: ~"calc(50% - 5px)";
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    .GithubTitle{
+        display: flex;
+        // margin: 0;
+        // font-size: 14px;
+        // font-weight: bold;
+        color: #0366d6;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    } 
+    .GithubIntro {  
+        font-size: 14px;
+        line-height: 20px;
+        height: 60px;
+        margin-right: 20px;
+        color: #333;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    } 
+    .GithubInfos{
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #666;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .listItemIcon {
+            margin-right: 5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .listItemIconc {
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
+            border-radius: 50%;
+            background: rgb(176, 114, 25);
+        }
+        .listItemText {
+            margin-right: 20px;
+        }
+    } 
+}

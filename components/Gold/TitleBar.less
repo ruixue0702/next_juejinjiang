@@ -1,0 +1,39 @@
+.GoldTitleBox {
+    padding: 4px 12px 4px 4px;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    .IconJujin {
+        width: 34px;
+        height: 34px;
+        border-radius: 2px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .title {
+        color: rgb(4, 74, 171);
+        margin: 0 10px;
+        line-height: 34px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .tabBtn {
+        line-height: 34px;
+        color: #646c7b;
+        opacity: .3;
+        float: right;
+        cursor: pointer;
+        &.active {
+            opacity: .8;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &:hover {
+            opacity: 1;
+        }
+        &.newtab {
+            margin-left: 10px;
+        }
+    }
+}

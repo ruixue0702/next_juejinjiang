@@ -1,0 +1,14 @@
+{
+    // 让babel支持next中的所有用到的babe
+    "presets": ["next/babel"],
+    "plugins": [
+        [
+            "import",
+            {
+                // 支持antd按需引入
+                "libraryName": "antd",
+                "style": true
+            }
+        ]
+    ]
+}
