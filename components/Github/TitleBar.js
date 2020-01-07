@@ -2,7 +2,7 @@ import React from 'react'
 import "./TitleBar.less"
 import Select from '../Comps/Select'
 import SearchSelect from '../Comps/SearchSelect'
-import { changeType, changeLang, changePeriod, getGithubList } from '../../store/github';
+import { changeOffset, changeType, changeLang, changePeriod, getGithubList } from '../../store/github';
 import { useSelector, useDispatch } from 'react-redux';
 
 function TitleBar() {
@@ -10,16 +10,17 @@ function TitleBar() {
     const dispatch = useDispatch();
   
     const handleChangeType = (type) => {
+        dispatch(changeOffset(0))
         dispatch(changeType(type));
         dispatch(getGithubList)
     }
     const handleChangeLang = (lang) => {
-        console.log('github lang', lang)
+        dispatch(changeOffset(0))
         dispatch(changeLang(lang));
         dispatch(getGithubList)
     }
     const handleChangePeriod = (period) => {
-        console.log('github period', period)
+        dispatch(changeOffset(0))
         dispatch(changePeriod(period));
         dispatch(getGithubList)
     }

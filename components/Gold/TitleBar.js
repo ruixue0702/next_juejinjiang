@@ -2,7 +2,7 @@ import React from 'react'
 import "./TitleBar.less"
 import Select from '../Comps/Select'
 
-import { changeType, getGoldList } from '../../store/gold';
+import { changeOffset, changeType, getGoldList } from '../../store/gold';
 import { useSelector, useDispatch } from 'react-redux';
 
 
@@ -11,7 +11,7 @@ function TitleBar() {
     const dispatch = useDispatch();
     
     const handleChangeType = (type) => {
-        console.log('gold title changetype', type)
+        dispatch(changeOffset(0))
         dispatch(changeType(type));
         dispatch(getGoldList)
     }
